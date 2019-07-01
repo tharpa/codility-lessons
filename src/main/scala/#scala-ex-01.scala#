@@ -1,0 +1,43 @@
+object Ex01 {
+  def main(args: Array[String]): Unit = {
+    println("Hello, world!")
+    val i = 5
+    println(i)
+  }
+}
+
+class Rational(x: Int, y: Int) {
+  def this(x: Int) = this(x, 1)
+
+  private def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
+  private val g = gcd(x, y)
+  def numer = x / g
+  def denom = y / g
+
+  def + (r: Rational) =
+    new Rational(
+      numer * r.denom + r.numer * denom,
+      denom * r.denom
+    )
+}
+
+class BankAccount {
+  private var balance = 0
+  def deposit(amount: Int): Int = {
+    if (amount > 0) balance = balance + amount
+    balance
+  }
+  def withdraw(amount: Int): Int =
+    if (0 < amount && amount <= balance) {
+      balance = balance - amount
+      balance
+    } else throw new Error("insufficient funds")
+}
+
+for (i <- 1 until 3) { System.out.print(i + " ") }
+
+for (i <- 1 until 3; j <- "abc") println(s"$i $j")
+
+case class Note(name: String, duration: String, octave: Int)
+
+val c3 = Note("C", "Quarter", 3)
