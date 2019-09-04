@@ -20,3 +20,7 @@ class Rational(x: Int, y: Int) {
       denom * r.denom
     )
 }
+
+object Rational {
+  def apply(x: Int, y: Int) = new Rational(x, y)
+}
