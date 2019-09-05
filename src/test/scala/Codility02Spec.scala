@@ -40,4 +40,12 @@ class Codility02Spec extends FlatSpec with Matchers {
   "An odd element array search" should "return 7 for [9, 3, 9, 3, 9, 7, 9]" in {
     solution(Array(9, 3, 9, 3, 9, 7, 9)) should be (7)
   }
+
+  it should "return 3 for [9, 3, 9, 3, 9, 3, 9]" in {
+    solution(Array(9, 3, 9, 3, 9, 3, 9)) should be (3)
+  }
+
+  it should "return 9 for [9, 3, 9, 3, 9]" in {
+    solution(Array(9, 3, 9, 3, 9)) should be (9)
+  }
 }
