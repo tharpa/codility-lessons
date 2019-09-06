@@ -46,6 +46,10 @@ class Codility03Spec extends FlatSpec with Matchers {
     solution(Array(3, 8, 9, 7, 6), 3) should be (Array(9, 7, 6, 3, 8))
   }
 
+  it should "return [] for k = 1 []" in {
+    solution(Array.empty, 1) should be (Array.empty)
+  }
+
   it should "return [0, 0, 0] for k =1 [0, 0, 0]" in {
     solution(Array(0, 0, 0), 1) should be (Array(0, 0, 0))
   }
