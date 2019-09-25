@@ -18,11 +18,11 @@
    :targets ("/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/classes")
    :test-targets ("/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/test-classes")
    :depends-on-modules nil
-   :compile-deps ("/Users/rk/.sbt/boot/scala-2.12.7/lib/scala-library.jar")
+   :compile-deps ("/Users/rk/.sbt/boot/scala-2.12.7/lib/scala-library.jar" "/Users/rk/.sbt/boot/scala-2.12.7/lib/scala-reflect.jar" "/Users/rk/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.8.jar")
    :runtime-deps nil
-   :test-deps nil
-   :doc-jars ("/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/scala-exercises_2.12-0.1-javadoc.jar" "/Users/rk/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.7-javadoc.jar")
-   :reference-source-roots ("/Users/rk/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar")))
+   :test-deps ("/Users/rk/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.2.0.jar" "/Users/rk/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.8.jar")
+   :doc-jars ("/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/scala-exercises_2.12-0.1-javadoc.jar" "/Users/rk/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.7-javadoc.jar" "/Users/rk/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.12.7-javadoc.jar" "/Users/rk/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/docs/scala-xml_2.12-1.2.0-javadoc.jar" "/Users/rk/.ivy2/cache/org.scalactic/scalactic_2.12/docs/scalactic_2.12-3.0.8-javadoc.jar" "/Users/rk/.ivy2/cache/org.scalatest/scalatest_2.12/docs/scalatest_2.12-3.0.8-javadoc.jar")
+   :reference-source-roots ("/Users/rk/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar" "/Users/rk/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.7-sources.jar" "/Users/rk/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.2.0-sources.jar" "/Users/rk/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.8-sources.jar" "/Users/rk/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.8-sources.jar")))
  :projects ((
     :id (:project "scala-exercises" :config "compile")
     :depends nil
@@ -30,16 +30,16 @@
     :targets ("/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/classes")
     :scalac-options ("-Ymacro-expand:discard")
     :javac-options nil
-    :library-jars ("/Users/rk/.sbt/boot/scala-2.12.7/lib/scala-library.jar")
-    :library-sources ("/Users/rk/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar")
-    :library-docs ("/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/scala-exercises_2.12-0.1-javadoc.jar" "/Users/rk/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.7-javadoc.jar")) (
+    :library-jars ("/Users/rk/.sbt/boot/scala-2.12.7/lib/scala-library.jar" "/Users/rk/.sbt/boot/scala-2.12.7/lib/scala-reflect.jar" "/Users/rk/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.8.jar")
+    :library-sources ("/Users/rk/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar" "/Users/rk/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.7-sources.jar" "/Users/rk/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.8-sources.jar")
+    :library-docs ("/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/scala-exercises_2.12-0.1-javadoc.jar" "/Users/rk/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.7-javadoc.jar" "/Users/rk/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.12.7-javadoc.jar" "/Users/rk/.ivy2/cache/org.scalactic/scalactic_2.12/docs/scalactic_2.12-3.0.8-javadoc.jar")) (
     :id (:project "scala-exercises" :config "test")
     :depends ((:project "scala-exercises" :config "compile"))
     :sources ("/Users/rk/Developer/Scala/scala-exercises/src/test/java" "/Users/rk/Developer/Scala/scala-exercises/src/test/scala-2.12" "/Users/rk/Developer/Scala/scala-exercises/src/test/scala" "/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/src_managed/test")
     :targets ("/Users/rk/Developer/Scala/scala-exercises/target/scala-2.12/test-classes")
     :scalac-options ("-Ymacro-expand:discard")
     :javac-options nil
-    :library-jars nil
-    :library-sources nil
-    :library-docs nil))
+    :library-jars ("/Users/rk/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.2.0.jar" "/Users/rk/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.8.jar")
+    :library-sources ("/Users/rk/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.2.0-sources.jar" "/Users/rk/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.8-sources.jar")
+    :library-docs ("/Users/rk/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/docs/scala-xml_2.12-1.2.0-javadoc.jar" "/Users/rk/.ivy2/cache/org.scalatest/scalatest_2.12/docs/scalatest_2.12-3.0.8-javadoc.jar")))
 )
